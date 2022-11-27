@@ -17,6 +17,23 @@ def read_item(item_id: int, q: Optional[str] = None):
     return {'item_id': item_id, 'q': q}
 
 
+# async def run():
+#     import dc_api
+#     print('run')
+#     async with dc_api.API() as api:
+#         async for index in api.board(board_id='stockus', num=10, start_page=1):
+#             print(index.title)
+#             # break
+#     return None
+#
+#
+# @app.get('/bar')
+# def bar():
+#     import asyncio
+#     asyncio.run(run())
+#     return None
+
+
 @app.get('/foo')
 def foo():
     try:
